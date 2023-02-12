@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>How to solve mystery caches</title>
+</head>
+<body>
+    <header class="hlavicka">
+        <h1>How to solve geocaching mystery caches</h1>
+    </header>
+
+    <ul class="menu">
+        <li><a href="#gps-convertor">GPS convertor</a></li>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+    </ul>
+
+    <section class="gps-convertor" id="gps-convertor">
+        <h2>GPS convertor</h2>
+        <p>This GPS convertor accepts only coordinates according to hint in the table.</p>
+
+        <table class="toDecimal">
+            <tr>
+                <th>DD°MM.mmm' to DD.dddd</th>
+            </tr>
+            <tr>
+                <td>Napiš souřadnice: </td>
+                <td>
+                    <input type="text" class="toDecimalInput" id="toDecimal" placeholder="N 49° 13.805 E 016° 38.940">
+                </td>
+                <td><button onclick="convertToDecimal()">Convert</button></td>
+            </tr>
+            <tr>
+                <td>Výsledné souřadnice: </td>
+                <td>
+                    <input type="text" id="decimalResult">
+                </td>
+                <td>
+                    <button onclick="resetFieldsToDecimal()">Reset</button>
+                </td>
+            </tr>
+        </table>
+
+        <table class="toDegree">
+            <tr>
+                <th>DD.dddd to DD°MM.mmm'</th>
+            </tr>
+            <tr>
+                <td>Napiš souřadnice: </td>
+                <td>
+                    <input type="text" class="toDegreeInput" id="toDegree" placeholder="48.9466667, 16.3141667">
+                </td>
+                <td><button onclick="convertToDegree()">Convert</button></td>
+            </tr>
+            <tr>
+                <td>Výsledné souřadnice: </td>
+                <td>
+                    <input type="text" id="degreeResult">
+                </td>
+                <td>
+                    <button onclick="resetFieldsToDegree()">Reset</button>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section class="aboutme" id="aboutme">
+        <h2>About me</h2>
+
+        <img class="photo-aboutme"src="obrazky/xsilence8x.jpg" alt="my nick photo">
+
+        <p>I am a geocaching player and I like to solve geocaching mystery caches.</p>
+    </section>
+
+    <section class="feedback" id="feedback">
+        <h2>Feedback</h2>
+        <p>Let me know if you like my webpage :-)</p>
+
+        
+
+   
+    <form action="my-form.php" method="post" class="contactme">
+        <h3>Contact form</h3>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message"></textarea>
+
+        <br>
+
+        <button>Send</button>
+       
+
+    </form>
+
+    
+</section>
+
+    <footer class="paticka">
+        <p>© 2023, xSilence8x</p>
+    </footer>
+
+    <script type="text/javascript" src="./script-gps.js"></script>
+
+</body>
+</html>
