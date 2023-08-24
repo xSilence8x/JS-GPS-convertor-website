@@ -1,5 +1,5 @@
-# http://mygeocaching.wz.cz
-This website is my small project where I used basics of HTML, JS, CSS and PHP.
+# GPS Convertor
+This website is my small project where I used basics of HTML, JS, CSS and PHP. Visit webpage [here](http://mygeocaching.wz.cz).
 
 ## Key sections of this website
 ### GPS Convertor
